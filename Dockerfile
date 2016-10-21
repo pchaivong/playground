@@ -5,12 +5,14 @@
 
 FROM ubuntu
 
+MAINTAINER pchaivong@gmail.com
+
 RUN apt-get update; \
     apt-get install -y \
       python python-pip \
       python-numpy python-scipy \
       build-essential python-dev python-setuptools \
-      libatlas-dev libatlas3gf-base
+      libatlas-dev libatlas3-base
 
 RUN update-alternatives --set libblas.so.3 \
       /usr/lib/atlas-base/atlas/libblas.so.3; \
