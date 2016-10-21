@@ -29,6 +29,7 @@ RUN mkdir -p /data
 
 # Setup directory for app
 RUN mkdir -p /usr/local/app
+RUN mkdir -p /data
 VOLUME /usr/local/app
 VOLUME /data
 
